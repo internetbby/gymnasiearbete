@@ -6,12 +6,37 @@
 
 }
 
+
+
+
 body{
+    margin: 0;
+    padding: 0;
+
+
     background-color: var(--background);
+
+}
+
+.parent{
+    
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
 }
 
 .container{
+
+    grid-area: 2 / 2 / 3 / 3;
+
+
     background-color: var(--main);
 
     color: var(--text);
+
+    grid-column: 1/5;
 }
