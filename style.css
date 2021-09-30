@@ -1,9 +1,11 @@
 :root{
     --background-color: #8a8a8a
-
-
     --main-color: #eeee
+
+    --text-color: black; 
+
     
+
 }
 
 body{
