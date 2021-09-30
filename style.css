@@ -1,13 +1,17 @@
 :root{
-    --background-color: #8a8a8a
-    --main-color: #eeee
+    --background: #afafaf;
+    --main: #eeee;
 
-    --text-color: black; 
-
-    
+    --text: black; 
 
 }
 
 body{
-    background-color: var(--main-color)  ;
+    background-color: var(--background);
+}
+
+.container{
+    background-color: var(--main);
+
+    color: var(--text);
 }
