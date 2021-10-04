@@ -5,11 +5,9 @@
     --text: black; 
 
 }
-
-
-
-
 body{
+    
+
     margin: 0;
     padding: 0;
 
@@ -19,10 +17,13 @@ body{
 }
 
 .parent{
+
+    height: 100vh;
+    width: 100vw;
     
     display: grid;
-    grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: [first] 1fr [column-start] 7fr [column-end] 1fr [end];
+    grid-template-rows: [first] 1fr  [row-start] 6fr  [row-end] 1fr [end]; 
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
@@ -30,9 +31,11 @@ body{
 }
 
 .container{
+    height: 100%;
+    width: 100%;
 
-    grid-area: 2 / 2 / 3 / 3;
-
+    grid-row: row-start / row-end;
+    grid-column: column-start / column-end;
 
     background-color: var(--main);
 
