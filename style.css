@@ -21,7 +21,7 @@
 
   color: var(--text);
 }
-=======
+
 body{
     
 
@@ -30,12 +30,7 @@ body{
 
 
     background-color: var(--background);
-
-}
-
-
-
-  grid-column: 1/5;
+    grid-column: 1/5;
 }
 
 /* Popup box BEGIN */
