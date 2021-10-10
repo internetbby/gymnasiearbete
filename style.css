@@ -1,12 +1,26 @@
 :root {
   --background: #afafaf;
   --main: #eeee;
+  --second-tone: rgb(119, 119, 119);
 
   --text: black;
 }
 
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+
+  background-color: var(--background);
+  grid-column: 1/5;
+}
 
 .parent {
+  width: 100vw;
+  height: 90vh;
+
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   grid-template-rows: 1fr 6fr 1fr;
@@ -19,18 +33,32 @@
 
   background-color: var(--main);
 
+  height: 100%;
+
+  width: 100%;
+
   color: var(--text);
 }
 
-body{
-    
+#introductionPage {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 
-    margin: 0;
-    padding: 0;
+  display: block;
+}
 
+#timePressureSlide1{
+    background-color: black;
 
-    background-color: var(--background);
-    grid-column: 1/5;
+    display: none;
+}
+
+button {
+  width: 5%;
+  height: 5%;
+  background-color: var(--second-tone);
 }
 
 /* Popup box BEGIN */
