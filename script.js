@@ -2,7 +2,15 @@
 
 //button introduction 
 var buttonIntroductionPage = document.querySelector("#buttonIntroductionPage");
-var page1Button = document.querySelector("#pageOneOption1")
+
+
+
+
+
+
+
+
+/*var page1Button = document.querySelector("#pageOneOption1")
 var page2Button = document.querySelector("#pageTwoOption1")
 
 //Add button for every new page in this array
@@ -29,7 +37,7 @@ document.addEventListener('click', function (event){
         page1.classList.remove ("hidden");
     }
 
-})
+})*/
 
 
 //Issue is that when the code plays on load, the for loops play. it should be while youre clicking it is playing
