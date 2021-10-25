@@ -1,36 +1,31 @@
+//button introduction
+let introductionPage = document.getElementById("introductionPage");
 
 
-//button introduction 
-var buttonIntroductionPage = document.getElementById("buttonIntroductionPage");
-var firstPage = document.getElementById("pageOne"); 
+var form = document.getElementById("theForm")
 
-firstPage.style.display= "none";
+var firstPage = document.getElementById("pageOne");
+var secondPage = document.getElementById("pageTwo");
 
-buttonIntroductionPage.addEventListener("click", ()=>{
-    console.log ("click");
-    
-    let introductionPage = document.getElementById("introductionPage");
+firstPage.style.display = "none";
+secondPage.style.display = "none";
+form.style.display = "none";
 
-    var element = introductionPage.style; 
 
-    element.display = "none";
-    firstPage.style.display = "block";
+introductionPage.addEventListener("click", () => {
+  console.log("click");
+ 
+  introductionPage.style.display = "none";
 
-    
+  firstPage.style.display = "block";
+  form.style.display = "block";
 });
 
+firstPage.addEventListener("click", () => {
+  console.log("click");
+
+  firstPage.style.display = "none";
 
 
-
-firstPage.addEventListener("click", ()=>{
-    console.log ("click");
-    
-    let firstPageButtonOne = document.getElementById("pageOneOption1");
-
-    var element = firstPageButtonOne.style; 
-
-    element.display = "none";
-
-    
+  secondPage.style.display = "block";
 });
-
