@@ -12,6 +12,26 @@ secondPage.style.display = "none";
 form.style.display = "none";
 
 
+
+function clockTimer(pageToHide, pageToShow){//hide clock timer 
+  var seconds_left = 10;
+var interval = setInterval(function() {
+    document.getElementById('clock').innerHTML = --seconds_left;
+
+    if (seconds_left <= 0)
+    {
+        pageToHide.style.display = "none";
+        pageToShow.style.display = "block";
+        clearInterval(interval);
+
+    }
+}, 1000);
+
+
+}
+
+
+
 introductionPage.addEventListener("click", () => {
   console.log("click");
  
@@ -19,6 +39,9 @@ introductionPage.addEventListener("click", () => {
 
   firstPage.style.display = "block";
   form.style.display = "block";
+  
+  clockTimer(firstPage,secondPage);
+
 });
 
 firstPage.addEventListener("click", () => {
@@ -29,3 +52,5 @@ firstPage.addEventListener("click", () => {
 
   secondPage.style.display = "block";
 });
+
+
